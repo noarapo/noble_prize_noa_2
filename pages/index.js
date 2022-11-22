@@ -13,15 +13,16 @@ export default function IndexPage() {
   if (!data) return <Message content="No data could be loaded..." />
 
   // Just for convenience
-  const records = data.teams;
-
+  const records = data.nobelPrizes;
+  
   return (
     <>
-      <div className="row">
-        {records.map(record => {
-          return <div key={record.id} className="item"><div className="content">{record.name}</div></div>
-        })}
-      </div>
-    </>
+    <div className="row">
+      {records.map(record => { 
+      
+        return <div key={record.id} className="card"><div className="card_data">{record.name}</div></div>
+      })}
+    </div>
+  </>
   )
 }
