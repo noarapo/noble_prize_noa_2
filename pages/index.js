@@ -25,7 +25,7 @@ export default function IndexPage() {
         // console.log("record")
         // console.log(record)
         return <Card key = {record.laureates[0].id} title = {record.category.en} subtitle = {record.laureates[0].id} 
-         sum = {record.prizeAmount} year ={record.awardYear}/>
+         sum = {record.prizeAmount} year ={record.awardYear} />
         //TODO : record.laureates[0].fullName.en
         //TypeError: Cannot read properties of undefined (reading 'en')
         

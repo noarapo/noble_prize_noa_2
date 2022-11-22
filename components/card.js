@@ -3,7 +3,7 @@ export default function Card({ title, subtitle, name ,sum, year ,list}) {
         list = []
     }
     return (
-        <div className="card" onClick={() => {handler(link)}}>
+        <div className="card">
             <div className="row">
             <div className="content">
                 <h2>Category: {title}</h2>
